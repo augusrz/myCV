@@ -1,0 +1,159 @@
+/* style.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+nav.menu-fijo {
+    background: #333;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav.menu-fijo a {
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav.menu-fijo a:hover {
+    background: #575757;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+main section h2 {
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+#habilidades li {
+    background: linear-gradient(to right, green 80%, white 80%);
+    color: #ffffff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#habilidades li[data-porcentaje="100"] {
+    background: linear-gradient(to right, green 100%, white 0%);
+}
+
+#habilidades li[data-porcentaje="80"] {
+    background: linear-gradient(to right, green 80%, white 20%);
+}
+
+#habilidades li[data-porcentaje="40"] {
+    background: linear-gradient(to right, green 40%, white 60%);
+}
+
+/* Add similar CSS for other percentages */
+
+#habilidades li[data-porcentaje="20"] {
+    background: linear-gradient(to right, green 20%, white 80%);
+}
+
+#habilidades li[data-porcentaje="50"] {
+    background: linear-gradient(to right, green 50%, white 50%);
+}
+
+#habilidades li[data-porcentaje="70"] {
+    background: linear-gradient(to right, green 70%, white 30%);
+}
+
+#habilidades li[data-porcentaje="30"] {
+    background: linear-gradient(to right, green 30%, white 70%);
+}
+
+#contacto form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#contacto form div {
+    grid-column: span 2;
+}
+
+#contacto form input,
+#contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contacto form input[type="submit"] {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#contacto form input[type="submit"]:hover {
+    background: #575757;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+
